@@ -33,27 +33,40 @@ Below are some clients that can be used to connect to our DB server:
 
 In the Windows start-up menu, search for "SQL Shell (psql)".
 
-### **Connection**
+### Connection to a database using SQL Shell (psql)
 
+* **Connection**
 ![alt text](images/introduction/image-4.png)
 
-### **Result after connection**
+
+* **Result after connection**
 
 ![alt text](images/introduction/image-5.png)
 
-### **Create a new database**
+* **Create a new database named: test**
 
-* \? give you the help documentation
+> * \? give you the help documentation. To quit: CTRL + C
 
-* \q followed by O to quit
+> * \q followed by O to quit
 
-* \l list the currently available databases
+> * \! cls to clear the terminal
+
+> * \l list the currently available databases
 
 ![alt text](images/introduction/image-6.png)
 
-* create a database named: test
+Database creation
 
 ![alt text](images/introduction/image-7.png)
 
 ![alt text](images/introduction/image-8.png)
+
+### Connect to a database (here: tutorial) using Windows CMD (or Powershell)
+
+From now, we going to use Windows Command Promt (CMD) or Powershell. Note that the above CLI can be executed by CMD.
+
+![alt text](images/introduction/image-9.png)
+
+
+
 
