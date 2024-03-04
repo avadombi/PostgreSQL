@@ -8,19 +8,19 @@ Postgre is an object-relational DB (ORDB) management system (also known as a DB 
 
 Data is stored in tables and tables are formed by rows and columns.
 
-![alt text](images/image-1.png)
+![alt text](images/introduction/image-1.png)
 
 * What is a relational database
 
 A relational DB is a relation between one or more tables
 
-![alt text](images/image-2.png)
+![alt text](images/introduction/image-2.png)
 
 # How to connect to DB server
 
 Locally, our computer acts as a DB server. Below are different options to connect to the DB server (our computer):
 
-![alt text](images/image-3.png)
+![alt text](images/introduction/image-3.png)
 
 ## GUI Clients
 Below are some clients that can be used to connect to our DB server:
@@ -35,11 +35,11 @@ In the Windows start-up menu, search for "SQL Shell (psql)".
 
 * **Connection**
 
-![alt text](images/image-4.png)
+![alt text](images/introduction/image-4.png)
 
 * **Result after connection**
 
-![alt text](images/image-5.png)
+![alt text](images/introduction/image-5.png)
 
 * **Create a new database**
 
@@ -49,6 +49,11 @@ In the Windows start-up menu, search for "SQL Shell (psql)".
 
 > \l list the currently available databases
 
-![alt text](images/image-6.png)
+![alt text](images/introduction/image-6.png)
 
+> create a database named: test
+
+![alt text](images/introduction/image-7.png)
+
+![alt text](images/introduction/image-8.png)
 
