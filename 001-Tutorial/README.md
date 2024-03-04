@@ -18,7 +18,29 @@ A relational DB is a relation between one or more tables
 
 # How to connect to DB server
 
-Locally, our computer act as a DB server. Below are different options to connect to the DB server (our computer):
+Locally, our computer acts as a DB server. Below are different options to connect to the DB server (our computer):
 
 ![alt text](images/image-3.png)
+
+## GUI Clients
+Below are some clients that can be used to connect to our DB server:
+
+* DataGrip
+* Postico
+* pg Admin 4 (for Windows users)
+
+## Terminal / Command Line (CLI)
+
+In the Windows start-up menu, search for "SQL Shell (psql)".
+
+* Connection
+
+![alt text](images/image-4.png)
+
+* Result after connection
+
+![alt text](images/image-5.png)
+
+
+
 
