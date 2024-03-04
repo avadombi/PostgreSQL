@@ -1,12 +1,13 @@
 create table person (
-	id INT,
-	first_name VARCHAR(50),
-	last_name VARCHAR(50),
-	email VARCHAR(50),
-	gender VARCHAR(50),
-	date_of_birth DATE,
-	country_of_birth VARCHAR(50)
+	id BIGSERIAL NOT NULL PRIMARY KEY,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	email VARCHAR(150),
+	gender VARCHAR(50) NOT NULL,
+	date_of_birth DATE NOT NULL,
+	country_of_birth VARCHAR(50) NOT NULL
 );
+
 insert into person (id, first_name, last_name, email, gender, date_of_birth, country_of_birth) values (1, 'Colet', 'Venable', null, 'Male', '2023-04-17', 'China');
 insert into person (id, first_name, last_name, email, gender, date_of_birth, country_of_birth) values (2, 'Maritsa', 'Caplan', 'mcaplan1@umich.edu', 'Polygender', '2024-01-28', 'China');
 insert into person (id, first_name, last_name, email, gender, date_of_birth, country_of_birth) values (3, 'Bertina', 'Stanwix', 'bstanwix2@unblog.fr', 'Female', '2024-01-25', 'Slovenia');

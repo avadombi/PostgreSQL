@@ -137,6 +137,18 @@ This the configuration I made for our example (note: I added a new field: `count
 ![alt text](images/CRUD/INSERT/image-3.png)
 
 
+`\i path_to_file/person.sql` but as `country_of_birth` does not exist in our table person, we have to do this:
 
+1. DROP TABLE person
+
+2. Execute our file person.sql which contains at first an instruction to create a `person` table
+
+`\i path_to_file/person.sql`
+
+![alt text](images/CRUD/INSERT/image-4.png)
+
+![alt text](images/CRUD/INSERT/image-5.png)
+
+### 3.3. READ RECORDS FROM A TABLE
 
 
