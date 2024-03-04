@@ -33,14 +33,22 @@ Below are some clients that can be used to connect to our DB server:
 
 In the Windows start-up menu, search for "SQL Shell (psql)".
 
-* Connection
+* **Connection**
 
 ![alt text](images/image-4.png)
 
-* Result after connection
+* **Result after connection**
 
 ![alt text](images/image-5.png)
 
+* **Create a new database**
 
+> \? give you the help documentation
+
+> \q followed by O to quit
+
+> \l list the currently available databases
+
+![alt text](images/image-6.png)
 
 
