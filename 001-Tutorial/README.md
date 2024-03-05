@@ -523,5 +523,32 @@ Return only:
 ![alt text](images/Relationships/image-6.png)
 
 
+#### 4.4.2.1. Left Join
+
+Take all records from A as well as those of B where columnA = columnB and return a new table with all_columns_of_A, all_columns_of_B by default
+
+![alt text](images/Relationships/image-7.png)
+
+1. Get all people either with car or not
+
+![alt text](images/Relationships/image-8.png)
+
+2. Get only people with no car
+
+![alt text](images/Relationships/image-9.png)
+
+
+## 4.5. Delete records with foreign keys
+
+Suppose we want to delete a record in `car` table. Some cars are referenced in `person` table. So those car cannot be deleted directly. Follow the below steps:
+
+
+* **Step 1: Remove records in `person` with car_id = those to delete or set car_id = null in `person`**
+* **Step 2: Delete those car**
+
+![alt text](images/Relationships/image-10.png)
+
+
+
 
 
