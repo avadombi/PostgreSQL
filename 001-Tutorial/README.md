@@ -307,6 +307,36 @@ this.gsub("$", ""): replace '$' by ''
 ![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-4.png)
 
 
+#### 3.4.2. Calculate SUM
+
+1. Total sum of prices for each car's make
+
+![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-5.png)
+
+#### 3.4.2. Basic arithmetic functions
+
+![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-6.png)
+
+1. Suppose we want to reduce the price of the car by 10%. Send back the new price.
+
+`new_price = price - 0.1 * prince = price * 0.9`
+ 
+Round the new price
+
+![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-7.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
