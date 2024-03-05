@@ -151,4 +151,24 @@ This the configuration I made for our example (note: I added a new field: `count
 
 ### 3.3. READ RECORDS FROM A TABLE
 
+* **Select from and limit**
+
+![alt text](images/CRUD/READ/image-1.png)
+
+
+* **Select from, limit and order by**
+
+![alt text](images/CRUD/READ/image-2.png)
+
+* **Select from, limit, order by and distinct**
+
+Retrieve data without duplicates
+
+![alt text](images/CRUD/READ/image-3.png)
+
+* **Where clause and AND/OR**
+
+Another method to filter data
+
+![alt text](images/CRUD/READ/image-4.png)
 
