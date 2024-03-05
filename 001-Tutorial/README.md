@@ -612,5 +612,5 @@ So, instead of `BIGSERIAL` we will use `UUID`.
 
 ![alt text](images/Relationships/image-20.png)
 
-`USING` instead of `ON ...` because in both table, the join columns have same names: `car_uuid`.
+`USING` instead of `ON ...` because in both tables, the join columns have same names: `car_uuid`.
 
