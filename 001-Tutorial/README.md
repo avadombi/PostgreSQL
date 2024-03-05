@@ -549,6 +549,31 @@ Suppose we want to delete a record in `car` table. Some cars are referenced in `
 ![alt text](images/Relationships/image-10.png)
 
 
+## 4.6. Export query results to CSV
+
+`HEADER` means that we want to include a header.
+
+![alt text](images/Relationships/image-11.png)
 
 
+## 4.7. Serial and sequences
 
+![alt text](images/Relationships/image-12.png)
+
+![alt text](images/Relationships/image-13.png)
+
+## 4.7. Extensions
+
+These are functions that add extra-functionalities to our database.
+
+* View available extensions
+
+![alt text](images/Relationships/image-14.png)
+
+![alt text](images/Relationships/image-15.png)
+
+### 4.7.1. understanding UUID data type
+
+Universally Unique Identifier (UUID)
+
+* **Install the uuid-ossp extension**
