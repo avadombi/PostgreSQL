@@ -213,3 +213,42 @@ For example, let's get records with email ending by
 
 ![alt text](images/CRUD/READ/image-10.png)
 
+Another example:
+
+1. `%@google.%`: any # chars before `@google.` and any # chars after
+2. `________@%`: 8 `_` so any 8 chars before `@` followed by any chars after
+3. country_of_birth = `Z%`: starting by Z (it is case-sensitive)
+4. Use ILIKE to make it case-insensitive
+
+![alt text](images/CRUD/READ/image-11.png)
+
+
+#### 3.3.10. GROUP BY
+
+It allows to group records based on one or more columns
+
+1. How many peoples we have for each country in our table `person`
+
+* **Step 1: Select all pepole in the table**
+* **Step 2: Group people by country_of_birth -> group of countries, each containing they people**
+* **Step 3: count the number of people for each group (i.e., each country)**
+* **Step 4: return country_name and count and order by country_name**
+
+![alt text](images/CRUD/READ/image-12.png)
+
+
+#### 3.3.10. GROUP BY HAVING
+
+`HAVING` allows to perform a filtering after a `GROUP BY`. It is analogous to `WHERE` but `WHERE` cannot be used after `GROUP BY`.
+
+1. How many peoples we have for `France` and `Nigeria` in our table `person`
+
+* **Step 1: Select all pepole in the table**
+* **Step 2: Group people by country_of_birth -> group of countries, each containing they people**
+* **Step 3: count the number of people for each group (i.e., each country)**
+* **Step 4: get results for France and Nigeria only**
+* **Step 5: return country_name and count and order by country_name in DESC**
+
+![alt text](images/CRUD/READ/image-13.png)
+
+
