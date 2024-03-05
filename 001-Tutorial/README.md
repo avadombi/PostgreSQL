@@ -474,6 +474,12 @@ In the example below, when inserting a record, if gender is not part of the list
 ![alt text](images/KEYS/image-4.png)
 
 
+## 4.4. Foreign keys, Joins and Relationships
+
+![alt text](images/Relationships/image-1.png)
+
+
+![alt text](images/Relationships/image-2.png)
 
 
 
