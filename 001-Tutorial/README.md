@@ -476,13 +476,51 @@ In the example below, when inserting a record, if gender is not part of the list
 
 ## 4.4. Foreign keys, Joins and Relationships
 
+### 4.4.1. Foreign keys and relationships
+
 ![alt text](images/Relationships/image-1.png)
 
 
 ![alt text](images/Relationships/image-2.png)
 
 
+Let's build this relationship.
 
+* **Step 1: Drop both tables**
+* **Step 2: Recreate both tables with FK**
+
+```
+See person-car.sql
+```
+
+![alt text](images/Relationships/image-3.png)
+
+* **Step 3: Update FK in `person` table**
+
+![alt text](images/Relationships/image-4.png)
+
+### 4.4.2. Joins
+
+#### 4.4.2.1. Inner Join
+
+Take all records where columnA = columnB and return a new table with all_columns_of_A, all_columns_of_B by default
+
+![alt text](images/Relationships/image-5.png)
+
+1. Get all people with car
+
+Return only:
+    * first_name
+    * last_name
+    * country_of_birth
+    * make
+    * price
+
+* **Step 1: Select all people**
+* **Step 2: For each people with a car, retrieve its car info**
+* **Step 3: return the desired columns**
+
+![alt text](images/Relationships/image-6.png)
 
 
 
