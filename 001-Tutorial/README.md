@@ -326,17 +326,52 @@ Round the new price
 ![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-7.png)
 
 
+#### 3.4.3. Coalesce
+
+1. Select all `person` and for those without `email` return `email not provided` in the `email` column
+
+Use `Coalesce` to specify that if `email` is null then replace it by the first value found in the `coalesce` list.
+
+```
+1. Case 1
+COALESCE(email, 'Email not provided') => if email = null, it will be replaced by:
+Email not provided
+
+2. COALESCE(email, first_name, 'Email not provided') => if email = null, it will be replaced by first_name but if first_name is not found also, it will be replaced by:
+Email not provided
+```
+
+![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-8.png)
 
 
+#### 3.4.4. NULLIF
+
+```
+NULLIF(param1, param2) = {
+    param1 if param1 <> param2,
+    return nothing if param1 == param2
+}
+```
+
+1. Handle division by zero
 
 
+```
+SELECT COALESCE(10 / NULLIF(diviser, 0), 0) => if diviser = 0, 10 / NULLIF(diviser, 0) will return null and COALESCE will return 0 else it will return 10 / diviser
+```
+
+#### 3.4.5. Timestamps and dates
+
+![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-9.png)
+
+**Date/Time types**
+
+https://www.postgresql.org/docs/current/datatype-datetime.html
 
 
+#### 3.4.5.1. Add and subtract with dates
 
-
-
-
-
+![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-10.png)
 
 
 
