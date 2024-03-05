@@ -577,3 +577,40 @@ These are functions that add extra-functionalities to our database.
 Universally Unique Identifier (UUID)
 
 * **Install the uuid-ossp extension**
+
+```
+test=# CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+Outputs:
+---
+CREATE EXTENSION
+```
+
+![alt text](images/Relationships/image-16.png)
+
+* **View list of available functions**
+
+![alt text](images/Relationships/image-17.png)
+
+Now, we can invoke the above functions in our queries. Example:
+
+![alt text](images/Relationships/image-18.png)
+
+These kind of ID is usefull to make it difficult for hacker to penetrate into our db (e.g.)
+
+### 4.7.2. UUID as Primary Keys
+
+See `person-car_uuid.sql` file.
+
+So, instead of `BIGSERIAL` we will use `UUID`.
+
+
+* **Step 1: Drop both tables: person first, followed by car because person references car**
+* **Step 2: Recreate both tables using `person-car_uuid.sql` file**
+
+![alt text](images/Relationships/image-19.png)
+
+![alt text](images/Relationships/image-20.png)
+
+`USING` instead of `ON ...` because in both table, the join columns have same names: `car_uuid`.
+
