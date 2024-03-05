@@ -84,7 +84,7 @@ Before using it, be sure you have a backup of it
 
 ## 3. CRUD operations
 
-### 3.1. CREATE A TABLE
+### 3.1. Create a table
 
 ![alt text](images/CRUD/CREATE/image-1.png)
 
@@ -250,5 +250,35 @@ It allows to group records based on one or more columns
 * **Step 5: return country_name and count and order by country_name in DESC**
 
 ![alt text](images/CRUD/READ/image-13.png)
+
+
+2. Get `countries` with more than `50` people in our table `person`
+
+* **Step 1: Select all pepole in the table**
+* **Step 2: Group people by country_of_birth -> group of countries, each containing they people**
+* **Step 3: count the number of people for each group (i.e., each country)**
+* **Step 4: get countries with count > 70**
+* **Step 5: return country_name and count**
+
+![alt text](images/CRUD/READ/image-14.png)
+
+
+Note: you can only use column aliases once the selection has been executed. It's the case after HAVING for example.
+
+**Aggregate functions**
+
+https://www.postgresql.org/docs/9.5/functions-aggregate.html
+
+
+
+### 3.4. Add new table and data using Mockaroo
+
+![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-1.png)
+
+
+
+
+
+
 
 
