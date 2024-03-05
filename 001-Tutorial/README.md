@@ -275,8 +275,36 @@ https://www.postgresql.org/docs/9.5/functions-aggregate.html
 
 ![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-1.png)
 
+For `price` field, I added the following function to remove the `$` symbol.
+
+```
+this.gsub("$", "")
+
+this.gsub("$", ""): replace '$' by ''
+```
+
+#### 3.4.1. Calculate Min, Max & Avg
+
+1. Return the max, min, avg car's price in our table `car`
+
+![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-2.png)
+
+2. Return the min price for each couple (`make`, `model`)
+
+* **Step 1: Select all cars**
+* **Step 2: Group them by (make, model)**
+* **Step 3: For each group, compute the min price**
+* **Step 4: Return the make, model and price of the cars in step 3**
+* **Step 5: Order by min price in ASC order**
+* **Step 6: Limit to 10 cars**
+* **Step 7: round prices to integers**
+
+![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-3.png)
 
 
+2. Return the max price for each `make`
+
+![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-4.png)
 
 
 
