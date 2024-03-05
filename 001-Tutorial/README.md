@@ -149,26 +149,67 @@ This the configuration I made for our example (note: I added a new field: `count
 
 ![alt text](images/CRUD/INSERT/image-5.png)
 
-### 3.3. READ RECORDS FROM A TABLE
+### 3.3. Read records from a table
 
-* **Select from and limit**
+#### 3.3.1. Select from and limit
 
 ![alt text](images/CRUD/READ/image-1.png)
 
 
-* **Select from, limit and order by**
+#### 3.3.2. Select from, limit and order by
 
 ![alt text](images/CRUD/READ/image-2.png)
 
-* **Select from, limit, order by and distinct**
+#### 3.3.3. Select from, limit, order by and distinct
 
 Retrieve data without duplicates
 
 ![alt text](images/CRUD/READ/image-3.png)
 
-* **Where clause and AND/OR**
+#### 3.3.4. Where clause and AND/OR
 
 Another method to filter data
 
 ![alt text](images/CRUD/READ/image-4.png)
+
+#### 3.3.5. Comparison operators
+
+* **How they works**
+![alt text](images/CRUD/READ/image-5.png)
+
+* **Practical example**
+
+![alt text](images/CRUD/READ/image-6.png)
+
+#### 3.3.6. Limit, Offset and fetch
+
+![alt text](images/CRUD/READ/image-7.png)
+
+
+#### 3.3.7. IN
+
+Allows to select data that mathces many values in a list
+
+![alt text](images/CRUD/READ/image-8.png)
+
+#### 3.3.8. BETWEEN
+
+Select data between two numerical-like values such as date, integers, float, ...
+
+So, it allows to select records with a certain column contained in a range [a, b].
+
+![alt text](images/CRUD/READ/image-9.png)
+
+
+#### 3.3.9. LIKE and ILIKE
+
+LIKE is used to match a pattern
+
+For example, let's get records with email ending by
+1. `.com`
+2. `@about.com`
+
+`%` is a regular expression meaning any number of characters. So, `%.com` means any number of characters followed by `.com`.
+
+![alt text](images/CRUD/READ/image-10.png)
 
