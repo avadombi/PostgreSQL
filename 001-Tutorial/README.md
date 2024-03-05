@@ -270,7 +270,6 @@ Note: you can only use column aliases once the selection has been executed. It's
 https://www.postgresql.org/docs/9.5/functions-aggregate.html
 
 
-
 ### 3.4. Add new table and data using Mockaroo
 
 ![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-1.png)
@@ -372,6 +371,113 @@ https://www.postgresql.org/docs/current/datatype-datetime.html
 #### 3.4.5.1. Add and subtract with dates
 
 ![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-10.png)
+
+#### 3.4.5.2. Extracting fields
+
+![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-11.png)
+
+#### 3.4.5.2. Age function
+
+1. Return all column + a new column in `person` table which represents the age
+
+```
+AGE(NOW(), date_of_birth)
+```
+
+```
+SELECT *, AGE(NOW(), date_of_birth) AS age FROM person;
+```
+
+![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-12.png)
+
+2. Extract only the YEAR
+
+![alt text](images/CRUD/ADD_NEW_TABLES/Car/image-13.png)
+
+
+### 3.5. Delete records from a table
+
+```
+DELETE FROM person WHERE id = 1000;
+```
+
+Delete all records (be carefull with this!)
+
+
+```
+DELETE FROM person;
+```
+
+### 3.6. Update records from a table
+
+
+Update all records (be carefull with this!)
+
+```
+UPDATE person SET email = 'username@gmail.com';
+
+This change the email of all records by 'username@gmail.com'
+```
+
+Update a record
+
+```
+UPDATE person SET email = 'username@gmail.com', last_name = 'Naruto' WHERE id = 1000;
+```
+
+### 3.7. On conflict, do nothing
+
+Imagine we want to add a new record with id = 1 for example. As id is a PK, this will trigger an error. To avoid stopping the execution of the request, we can add `ON CONFLICT (id) DO NOTHING` at the end of our request.
+
+
+![alt text](images/CRUD/INSERT/image-6.png)
+
+`ON CONFLICT` work only for columns with constraints such as PK, UNIQUE, CHECK CONSTRAINTS, ...
+
+
+### 3.8. Upsert: On conflict, do something
+
+Sometimes, on conflict, we wants to do something such as UPDATE the corresponding records. To update, just specify the column name and use the `EXCLUDED.colum_name` to set a new value.
+
+![alt text](images/CRUD/INSERT/image-7.png)
+
+
+# 4. Relationships
+
+## 4.1. Primary Key
+
+![alt text](images/KEYS/image-1.png)
+
+![alt text](images/KEYS/image-2.png)
+
+To create a primary in an existing table:
+
+```
+ALTER TABLE person ADD PRIMARY KEY (id);
+
+For this to work, make sure that before ALTER you deleted duplicate ids
+```
+
+## 4.2. Unique constraints
+
+Constraints one column or a combinaison of columns to have unique values
+
+![alt text](images/KEYS/image-3.png)
+
+
+## 4.3. Check constraints
+
+Allows to add a constraint based on a boolean condition
+
+In the example below, when inserting a record, if gender is not part of the listed genders below, an error will be triggered. But we can also alter the table to include more genders also.
+
+![alt text](images/KEYS/image-4.png)
+
+
+
+
+
+
 
 
 
