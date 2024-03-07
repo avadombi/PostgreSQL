@@ -1,0 +1,1 @@
+-- SELECT * FROM companies LIMIT 5;
