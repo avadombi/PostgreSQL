@@ -36,13 +36,13 @@ SELECT * FROM companies WHERE country LIKE 'Canada';
 SELECT * FROM companies WHERE country = 'canada';  -- return nothing because case-sensitive
 SELECT * FROM companies WHERE country ILIKE 'canada';  -- works because ILIKE is case-insentive
 
--- select companies located in Canada with name starting from `Re`
+-- select companies located in Canada with name starting from `Ro`
 SELECT * FROM companies
-WHERE country = 'Canada' AND name LIKE 'Re%';  -- Re followed by any sequence of characters (=> %)
+WHERE country = 'Canada' AND name LIKE 'Ro%';  -- Ro followed by any sequence of characters (=> %)
 
--- select companies located in Canada with name starting from `Re` or companies from 'Nigeria'
+-- select companies located in Canada with name starting from `Ro` or companies from 'Nigeria'
 SELECT * FROM companies
-WHERE (country = 'Canada' AND name LIKE 'Re%') OR (country = 'Nigeria');
+WHERE (country = 'Canada' AND name LIKE 'Ro%') OR (country = 'Nigeria');
 
 -- select companies located in Nigeria, Canada, France, China
 SELECT * FROM companies
