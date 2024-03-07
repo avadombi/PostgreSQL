@@ -18,7 +18,7 @@ FROM employees LIMIT 5;
 
 -- for each employee return his/her date of birth + 5 Years
 -- the addition convert DATE to TIMESTAMP, so cast the
--- TIMESTAMP to DATE
+-- TIMESTAMP (i.e., YYYY-MM-DD HH:MM:SS) to DATE (YYYY-MM-DD)
 SELECT
     first_name,
     date_birth,
