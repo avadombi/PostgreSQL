@@ -65,7 +65,22 @@ SELECT
     END AS status
 FROM employees;
 
+-- create a new table named testtable that store the first name and status of all employee
+-- `status` = 'Updated' if first_name starts by 'Ma' and NULL if not
+CREATE TABLE IF NOT EXISTS testtable AS
+SELECT
+    first_name,
+    CASE
+        WHEN first_name LIKE 'Ma%' THEN 'Updated'
+        ELSE NULL
+    END AS status
+FROM employees;
 
 
-
+-- in our table `testtable` if status is null return 'Unknown' for `status`
+-- for that, we will use COALESCE clause
+-- COALESCE(column, value1, value2, ...) = column value if column value is not null
+-- else = value1 if not null else = value2 if not null, ...
+SELECT first_name, COALESCE(status, 'Unknown')
+FROM testtable;
 

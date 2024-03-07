@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS employees(
     last_name VARCHAR(50) NOT NULL,
     email VARCHAR(150) NOT NULL,
     gender VARCHAR(50) NOT NULL,
+    date_birth DATE NOT NULL,
     company_id BIGINT NOT NULL,
 
     -- foreign key and its behavior on delete and update
